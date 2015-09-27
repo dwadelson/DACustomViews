@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *upperLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lowerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+- (IBAction)buttonPressed:(UIButton *)sender;
 
 @end
