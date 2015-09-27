@@ -15,7 +15,17 @@
     
     self = [super initWithFrame:frame];
     if (self) {
+        // 1. load the xib
         
+        [[NSBundle mainBundle] loadNibNamed:@"IFLInfoButton" owner:self options:nil];
+        
+        // 2. set the bounds
+        
+        self.bounds = self.view.bounds;
+        
+        // 3. add as a subview
+        
+        [self addSubview:self.view];
     }
     return self;
 }

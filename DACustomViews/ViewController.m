@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "IFLInfoButton.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    IFLInfoButton *upperInfoButton = [[IFLInfoButton alloc] init];
+    [self.view addSubview:upperInfoButton];
 }
 
 - (void)didReceiveMemoryWarning {
