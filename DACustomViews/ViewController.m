@@ -42,6 +42,14 @@
                                                          multiplier:1
                                                            constant:-50]];
     
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:upperInfoButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:nil
+                                                          attribute:NSLayoutAttributeNotAnAttribute
+                                                         multiplier:1
+                                                           constant:self.view.bounds.size.width]];
+    
     upperInfoButton.upperLabel.text = @"Keep track of every time you have a coffee";
     [upperInfoButton.button setTitle:@"Log a coffee drink" forState:UIControlStateNormal];
 }
