@@ -8,6 +8,12 @@
 
 #import "IFLInfoButton.h"
 
+@interface IFLInfoButton () {
+    CGSize _intrinsicContentSize;
+}
+
+@end
+
 @implementation IFLInfoButton
 
 
@@ -22,6 +28,9 @@
         // 2. set the bounds
         
         self.bounds = self.view.bounds;
+        
+        // 2a. set the intrinsic content size so that when doing autolayout we don't have to set those constraints
+        _intrinsicContentSize = self.bounds.size;
         
         // 3. add as a subview
         
@@ -43,6 +52,7 @@
         
         //2. Load subview
         [self addSubview:self.view];
+        _intrinsicContentSize = self.bounds.size;
         
     }
     return self;
@@ -50,4 +60,9 @@
 
 - (IBAction)buttonPressed:(UIButton *)sender {
 }
+
+-(CGSize) intrinsicContentSize {
+    return _intrinsicContentSize;
+}
+
 @end

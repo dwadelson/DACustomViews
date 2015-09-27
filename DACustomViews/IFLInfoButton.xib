@@ -14,11 +14,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-6N-v3d">
-                    <rect key="frame" x="0.0" y="76" width="320" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-6N-v3d">
+                    <rect key="frame" x="0.0" y="96" width="320" height="44"/>
                     <color key="backgroundColor" red="0.89589152700186214" green="0.89589152700186214" blue="0.89589152700186214" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,22 +27,40 @@
                         <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="NZy-sq-nGB"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-TF-Cp3">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-TF-Cp3">
+                    <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0ga-1X-nkR"/>
+                        <constraint firstAttribute="width" constant="300" id="vlP-0Z-pLt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-Of-czd">
-                    <rect key="frame" x="0.0" y="47" width="320" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-Of-czd">
+                    <rect key="frame" x="10" y="59" width="300" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="MfX-ti-CQL"/>
+                        <constraint firstAttribute="width" constant="300" id="hnW-s3-7m3"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.93538772772045109" green="1" blue="0.8902002308666318" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kbf-6N-v3d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0kt-Uz-psZ"/>
+                <constraint firstItem="nG1-TF-Cp3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GqX-Qc-41x"/>
+                <constraint firstItem="kbf-6N-v3d" firstAttribute="top" secondItem="QwK-Of-czd" secondAttribute="bottom" id="Oe4-kM-71L"/>
+                <constraint firstItem="QwK-Of-czd" firstAttribute="centerX" secondItem="kbf-6N-v3d" secondAttribute="centerX" id="SXx-yj-fCh"/>
+                <constraint firstAttribute="trailing" secondItem="kbf-6N-v3d" secondAttribute="trailing" id="WHt-EE-MoR"/>
+                <constraint firstItem="nG1-TF-Cp3" firstAttribute="leading" secondItem="QwK-Of-czd" secondAttribute="leading" id="bAG-Ss-qSf"/>
+                <constraint firstItem="kbf-6N-v3d" firstAttribute="top" secondItem="nG1-TF-Cp3" secondAttribute="bottom" constant="36" id="tdh-Ws-bcX"/>
+                <constraint firstAttribute="bottom" secondItem="kbf-6N-v3d" secondAttribute="bottom" id="w3c-NO-Jcz"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-74" y="103"/>
+            <point key="canvasLocation" x="-74" y="113"/>
         </view>
     </objects>
 </document>

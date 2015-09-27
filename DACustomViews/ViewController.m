@@ -22,6 +22,28 @@
     
     IFLInfoButton *upperInfoButton = [[IFLInfoButton alloc] init];
     [self.view addSubview:upperInfoButton];
+    
+   upperInfoButton.translatesAutoresizingMaskIntoConstraints = NO;
+
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:upperInfoButton
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1
+                                                           constant:0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:upperInfoButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1
+                                                           constant:-50]];
+    
+    upperInfoButton.upperLabel.text = @"Keep track of every time you have a coffee";
+    [upperInfoButton.button setTitle:@"Log a coffee drink" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
