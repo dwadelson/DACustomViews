@@ -14,6 +14,8 @@
 		EF4296F91BB7B1A000BE1F57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4296F81BB7B1A000BE1F57 /* Images.xcassets */; };
 		EF4296FC1BB7B1A000BE1F57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF4296FA1BB7B1A000BE1F57 /* LaunchScreen.xib */; };
 		EF4297081BB7B1A000BE1F57 /* DACustomViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4297071BB7B1A000BE1F57 /* DACustomViewsTests.m */; };
+		EF4297131BB7B1DB00BE1F57 /* IFLInfoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4297121BB7B1DB00BE1F57 /* IFLInfoButton.m */; };
+		EF4297151BB7B1F900BE1F57 /* IFLInfoButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF4297141BB7B1F900BE1F57 /* IFLInfoButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		EF4297011BB7B1A000BE1F57 /* DACustomViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DACustomViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4297061BB7B1A000BE1F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF4297071BB7B1A000BE1F57 /* DACustomViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DACustomViewsTests.m; sourceTree = "<group>"; };
+		EF4297111BB7B1DB00BE1F57 /* IFLInfoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLInfoButton.h; sourceTree = "<group>"; };
+		EF4297121BB7B1DB00BE1F57 /* IFLInfoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFLInfoButton.m; sourceTree = "<group>"; };
+		EF4297141BB7B1F900BE1F57 /* IFLInfoButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IFLInfoButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,9 @@
 				EF4296EF1BB7B1A000BE1F57 /* AppDelegate.h */,
 				EF4296F01BB7B1A000BE1F57 /* AppDelegate.m */,
 				EF4296F21BB7B1A000BE1F57 /* ViewController.h */,
+				EF4297111BB7B1DB00BE1F57 /* IFLInfoButton.h */,
+				EF4297121BB7B1DB00BE1F57 /* IFLInfoButton.m */,
+				EF4297141BB7B1F900BE1F57 /* IFLInfoButton.xib */,
 				EF4296F31BB7B1A000BE1F57 /* ViewController.m */,
 				EF4296F51BB7B1A000BE1F57 /* Main.storyboard */,
 				EF4296F81BB7B1A000BE1F57 /* Images.xcassets */,
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4296F71BB7B1A000BE1F57 /* Main.storyboard in Resources */,
+				EF4297151BB7B1F900BE1F57 /* IFLInfoButton.xib in Resources */,
 				EF4296FC1BB7B1A000BE1F57 /* LaunchScreen.xib in Resources */,
 				EF4296F91BB7B1A000BE1F57 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4296F41BB7B1A000BE1F57 /* ViewController.m in Sources */,
+				EF4297131BB7B1DB00BE1F57 /* IFLInfoButton.m in Sources */,
 				EF4296F11BB7B1A000BE1F57 /* AppDelegate.m in Sources */,
 				EF4296EE1BB7B1A000BE1F57 /* main.m in Sources */,
 			);
