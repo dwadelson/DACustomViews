@@ -16,6 +16,7 @@
 		EF4297081BB7B1A000BE1F57 /* DACustomViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4297071BB7B1A000BE1F57 /* DACustomViewsTests.m */; };
 		EF4297131BB7B1DB00BE1F57 /* IFLInfoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4297121BB7B1DB00BE1F57 /* IFLInfoButton.m */; };
 		EF4297151BB7B1F900BE1F57 /* IFLInfoButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF4297141BB7B1F900BE1F57 /* IFLInfoButton.xib */; };
+		EFEE38DD1BB9B19E0006687D /* UIInsetLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEE38DC1BB9B19E0006687D /* UIInsetLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		EF4297111BB7B1DB00BE1F57 /* IFLInfoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLInfoButton.h; sourceTree = "<group>"; };
 		EF4297121BB7B1DB00BE1F57 /* IFLInfoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFLInfoButton.m; sourceTree = "<group>"; };
 		EF4297141BB7B1F900BE1F57 /* IFLInfoButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IFLInfoButton.xib; sourceTree = "<group>"; };
+		EFEE38DB1BB9B19E0006687D /* UIInsetLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInsetLabel.h; sourceTree = "<group>"; };
+		EFEE38DC1BB9B19E0006687D /* UIInsetLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIInsetLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				EF4296F01BB7B1A000BE1F57 /* AppDelegate.m */,
 				EF4296F21BB7B1A000BE1F57 /* ViewController.h */,
 				EF4296F31BB7B1A000BE1F57 /* ViewController.m */,
+				EFEE38DB1BB9B19E0006687D /* UIInsetLabel.h */,
+				EFEE38DC1BB9B19E0006687D /* UIInsetLabel.m */,
 				EF4297111BB7B1DB00BE1F57 /* IFLInfoButton.h */,
 				EF4297121BB7B1DB00BE1F57 /* IFLInfoButton.m */,
 				EF4297141BB7B1F900BE1F57 /* IFLInfoButton.xib */,
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEE38DD1BB9B19E0006687D /* UIInsetLabel.m in Sources */,
 				EF4296F41BB7B1A000BE1F57 /* ViewController.m in Sources */,
 				EF4297131BB7B1DB00BE1F57 /* IFLInfoButton.m in Sources */,
 				EF4296F11BB7B1A000BE1F57 /* AppDelegate.m in Sources */,
@@ -428,6 +434,7 @@
 				EF42970D1BB7B1A000BE1F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF42970E1BB7B1A000BE1F57 /* Build configuration list for PBXNativeTarget "DACustomViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				EF4297101BB7B1A000BE1F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

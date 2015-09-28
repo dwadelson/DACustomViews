@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIInsetLabel.h"
 
 // Protocol definition starts here
 @protocol IFLInfoButtonDelegate <NSObject>
@@ -20,8 +21,8 @@
 
 @property (weak, nonatomic) id <IFLInfoButtonDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UIView *view;
-@property (weak, nonatomic) IBOutlet UILabel *upperLabel;
-@property (weak, nonatomic) IBOutlet UILabel *lowerLabel;
+@property (weak, nonatomic) IBOutlet UIInsetLabel *upperLabel;
+@property (weak, nonatomic) IBOutlet UIInsetLabel *lowerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 - (IBAction)buttonPressed:(UIButton *)sender;
 

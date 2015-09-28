@@ -17,6 +17,8 @@
 @implementation IFLInfoButton
 
 
+//TODO: figure out how to get label word wrap without setting explicit size value of UILabel in IB
+
 -(id) initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];
@@ -31,10 +33,11 @@
         
         // 2a. set the intrinsic content size so that when doing autolayout we don't have to set those constraints
         _intrinsicContentSize = self.bounds.size;
-        
+       
         // 3. add as a subview
-        
+
         [self addSubview:self.view];
+        
     }
     return self;
 }
@@ -50,13 +53,18 @@
         
         [[NSBundle mainBundle] loadNibNamed:@"IFLInfoButton" owner:self options:nil];
         
+        _intrinsicContentSize = self.bounds.size;
+       
+        
         //2. Load subview
         [self addSubview:self.view];
-        _intrinsicContentSize = self.bounds.size;
+
         
     }
     return self;
 }
+
+
 
 - (IBAction)buttonPressed:(UIButton *)sender {
     

@@ -16,7 +16,6 @@
 
 @implementation ViewController
 
-@synthesize upperInfoButton = _upperInfoButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,6 +54,10 @@
     _upperInfoButton.lowerLabel.text = @"The test has four more days to run.  Today is a 'bulletproof' day.";
     [_upperInfoButton.button setTitle:@"Log a coffee drink" forState:UIControlStateNormal];
     _upperInfoButton.delegate = self;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+
 }
 
 - (void)didReceiveMemoryWarning {
