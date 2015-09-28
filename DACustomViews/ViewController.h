@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IFLInfoButton.h"
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <IFLInfoButtonDelegate>
 
-
+@property (strong,nonatomic) IFLInfoButton *upperInfoButton;
 @end
 

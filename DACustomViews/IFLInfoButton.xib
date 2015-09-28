@@ -20,6 +20,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-6N-v3d">
                     <rect key="frame" x="0.0" y="96" width="320" height="44"/>
                     <color key="backgroundColor" red="0.89589152700186214" green="0.89589152700186214" blue="0.89589152700186214" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -27,13 +28,13 @@
                         <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="NZy-sq-nGB"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-TF-Cp3">
-                    <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-TF-Cp3">
+                    <rect key="frame" x="10" y="8" width="300" height="29"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="0ga-1X-nkR"/>
+                        <constraint firstAttribute="height" constant="29" id="0ga-1X-nkR"/>
                         <constraint firstAttribute="width" constant="300" id="vlP-0Z-pLt"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="16"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
@@ -42,13 +43,14 @@
                         </mask>
                     </variation>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-Of-czd">
-                    <rect key="frame" x="10" y="59" width="300" height="37"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-Of-czd">
+                    <rect key="frame" x="10" y="37" width="300" height="51"/>
+                    <color key="backgroundColor" red="0.9353877277" green="1" blue="0.8902002309" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="37" id="MfX-ti-CQL"/>
+                        <constraint firstAttribute="height" constant="51" id="MfX-ti-CQL"/>
                         <constraint firstAttribute="width" constant="300" id="hnW-s3-7m3"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
@@ -62,15 +64,15 @@
             <constraints>
                 <constraint firstItem="kbf-6N-v3d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0kt-Uz-psZ"/>
                 <constraint firstAttribute="trailing" secondItem="nG1-TF-Cp3" secondAttribute="trailing" constant="10" id="8Qn-nv-nmA"/>
-                <constraint firstItem="nG1-TF-Cp3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GqX-Qc-41x"/>
+                <constraint firstItem="nG1-TF-Cp3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="GqX-Qc-41x"/>
                 <constraint firstItem="QwK-Of-czd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="KyV-Kb-rIT"/>
-                <constraint firstItem="kbf-6N-v3d" firstAttribute="top" secondItem="QwK-Of-czd" secondAttribute="bottom" id="Oe4-kM-71L"/>
+                <constraint firstItem="kbf-6N-v3d" firstAttribute="top" secondItem="QwK-Of-czd" secondAttribute="bottom" constant="8" id="Oe4-kM-71L"/>
                 <constraint firstItem="QwK-Of-czd" firstAttribute="centerX" secondItem="kbf-6N-v3d" secondAttribute="centerX" id="SXx-yj-fCh"/>
                 <constraint firstAttribute="trailing" secondItem="kbf-6N-v3d" secondAttribute="trailing" id="WHt-EE-MoR"/>
                 <constraint firstItem="nG1-TF-Cp3" firstAttribute="leading" secondItem="QwK-Of-czd" secondAttribute="leading" id="bAG-Ss-qSf"/>
                 <constraint firstAttribute="trailing" secondItem="QwK-Of-czd" secondAttribute="trailing" constant="10" id="lcL-IK-AEQ"/>
                 <constraint firstItem="nG1-TF-Cp3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="sRs-fO-MFh"/>
-                <constraint firstItem="kbf-6N-v3d" firstAttribute="top" secondItem="nG1-TF-Cp3" secondAttribute="bottom" constant="36" id="tdh-Ws-bcX"/>
+                <constraint firstItem="kbf-6N-v3d" firstAttribute="top" secondItem="nG1-TF-Cp3" secondAttribute="bottom" constant="59" id="tdh-Ws-bcX"/>
                 <constraint firstAttribute="bottom" secondItem="kbf-6N-v3d" secondAttribute="bottom" id="w3c-NO-Jcz"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
