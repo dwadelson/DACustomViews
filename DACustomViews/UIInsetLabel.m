@@ -23,7 +23,7 @@
     //i would like to be able to assign _insets with a setter but nothing works...
     
     
-    _insets = UIEdgeInsetsMake(5,5,5,5);
+   // _insets = UIEdgeInsetsMake(5,5,5,5);
 
     [super drawTextInRect:UIEdgeInsetsInsetRect(rect, _insets)];
 }

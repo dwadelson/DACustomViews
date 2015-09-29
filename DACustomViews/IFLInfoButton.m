@@ -33,6 +33,10 @@
         
         // 2a. set the intrinsic content size so that when doing autolayout we don't have to set those constraints
         _intrinsicContentSize = self.bounds.size;
+        
+        self.upperLabel.insets = UIEdgeInsetsMake(5,5,5,5);
+        self.lowerLabel.insets = UIEdgeInsetsMake(5,5,5,5);
+
        
         // 3. add as a subview
 
@@ -54,16 +58,17 @@
         [[NSBundle mainBundle] loadNibNamed:@"IFLInfoButton" owner:self options:nil];
         
         _intrinsicContentSize = self.bounds.size;
-       
+        
+        self.upperLabel.insets = UIEdgeInsetsMake(5,5,5,5);
+        self.lowerLabel.insets = UIEdgeInsetsMake(5,5,5,5);
         
         //2. Load subview
         [self addSubview:self.view];
-
         
+
     }
     return self;
 }
-
 
 
 - (IBAction)buttonPressed:(UIButton *)sender {

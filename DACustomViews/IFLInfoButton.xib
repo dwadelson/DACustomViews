@@ -28,7 +28,7 @@
                         <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="NZy-sq-nGB"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="11" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-TF-Cp3">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="11" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-TF-Cp3" customClass="UIInsetLabel">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="0ga-1X-nkR"/>

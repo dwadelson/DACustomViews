@@ -51,9 +51,17 @@
 //                                                           constant:self.view.bounds.size.width]];
 //    
     _upperInfoButton.upperLabel.text = @"Keep track every time you have a coffee.";
-    _upperInfoButton.lowerLabel.text = @"The test has four more days to run.  Today is a 'bulletproof' day.";
+    _upperInfoButton.lowerLabel.text = @"The test has four more days to run.  Today is a 'normal coffee' day.";
     [_upperInfoButton.button setTitle:@"Log a coffee drink" forState:UIControlStateNormal];
     _upperInfoButton.delegate = self;
+    
+    //the following works fine here, but i can't find where to put it in UIInfoButton if i want to set it there.  
+    
+  
+//    _upperInfoButton.lowerLabel.insets = UIEdgeInsetsMake(5,5,5,5);
+//      _upperInfoButton.upperLabel.insets = UIEdgeInsetsMake(5,5,5,5);
+
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
