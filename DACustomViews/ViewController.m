@@ -51,18 +51,10 @@
     
 }
 
-- (void) viewWillAppear:(BOOL)animated {
-
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (void) infoButtonPressed:(id)sender {
     if (sender == self.upperInfoButton) {
-        NSLog(@"Spoots!!!");
+
     }
 }
 
