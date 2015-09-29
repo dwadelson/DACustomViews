@@ -81,9 +81,6 @@
         
     }
     
-    //TODO:  i want to be able to pass in an action via some property here
-    //could be a block, but i don't think i really want that
-    ///what i want is to pass in a target to which to segue from whichever is the view's viewcontroller.
 }
 
 -(CGSize) intrinsicContentSize {

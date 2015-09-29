@@ -12,6 +12,4 @@
 
 @property UIEdgeInsets insets;
 
-//TODO: figure out how to assign insets and use the assigned value...have not been able to do that
-
 @end

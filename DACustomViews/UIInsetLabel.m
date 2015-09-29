@@ -20,8 +20,6 @@
 
 - (void)drawTextInRect:(CGRect)rect {
     
-    //i would like to be able to assign _insets with a setter but nothing works...
-    
     
    // _insets = UIEdgeInsetsMake(5,5,5,5);
 
